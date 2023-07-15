@@ -8,7 +8,7 @@ import { youTubeActions } from '../store';
 const key ='AIzaSyBJKSjk-Rnt8UieekTaqQAezdDh4xVMYBc';
 
 const Navbar = () => {
-  const videosList = useSelector(state=>state.youtube.videos)
+ 
   let term = useSelector(state=>state.youtube.term)
   const dispatch = useDispatch();
   const searchInputRef = useRef();
@@ -27,8 +27,6 @@ const Navbar = () => {
     })
   },[])    
 
-console.log(videosList)
-console.log(videosList[0])
   return (
     <div>
        <nav className="navbar navbar-expand-lg text-lite bg-dark container-fluid">

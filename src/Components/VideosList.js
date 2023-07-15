@@ -3,7 +3,6 @@ import VideoItem from "./VideoItem"
 
 const VideosList = () => {
     const videos = useSelector(state=>state.youtube.videos)
-    console.log(videos,'from list')
   return (
     <div>
         <ul className="mt-5" style={{listStyle:'none'}}>
